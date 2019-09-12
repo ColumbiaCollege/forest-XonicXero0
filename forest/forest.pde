@@ -23,8 +23,8 @@ void draw() {
   //  line(0, 100*i, 1200, 100*i);
   //}
 
-  for (int t = 0; t < 1100; t=t+70) {
-    float r = random (60);
+  for (int t = 0; t < 1000; t=t+70) {
+    float r = random (80);
 
     //tree
 
@@ -34,7 +34,8 @@ void draw() {
     rect(100+t, 400+r, 20, 70);
     fill(#99CB1B);
     stroke(#99CB1B);
+    triangle(80+t, 410+r, 140+t, 410+r, 110+t, 360+r);
     triangle(75+t, 400+r, 145+t, 400+r, 110+t, 350+r);
-  
+    triangle(77+t, 390+r, 143+t, 390+r, 110+t, 335+r);
   }
 }
